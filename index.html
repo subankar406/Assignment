@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dark Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">Subankar</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <button class="cta-btn modal-trigger">Contact Me</button>
+  </nav>
+
+  <section id="hero" class="hero animate-gsap">
+    <h1>Revolutionize Your Web Experience</h1>
+    <p>Building secure, beautiful, and modern web solutions.</p>
+    <button class="big-btn modal-trigger">Get Started</button>
+  </section>
+
+  <section class="partners animate-gsap">
+    <div class="partners-row">
+      <span class="partner-pill">HTML</span>
+      <span class="partner-pill">CSS</span>
+      <span class="partner-pill">JS</span>
+      <span class="partner-pill">Webflow</span>
+      <span class="partner-pill">React</span>
+    </div>
+  </section>
+
+  <section id="skills" class="features animate-gsap">
+    <h2>Innovative Features</h2>
+    <div class="features-grid">
+      <div class="feature-card"> <h3>Responsive Design</h3> <p>Looks sharp on all devices, always.</p> </div>
+      <div class="feature-card"> <h3>Advanced Animations</h3> <p>Engaging transitions and interactions.</p> </div>
+      <div class="feature-card"> <h3>SEO Optimized</h3> <p>Modern best practices for discoverability.</p> </div>
+      <div class="feature-card"> <h3>Performance</h3> <p>Lightning-fast load and smooth navigation.</p> </div>
+    </div>
+  </section>
+
+  <section id="about" class="about animate-gsap">
+    <h2>About Me</h2>
+    <p>
+     Experienced web developer skilled in HTML, CSS, JavaScript, and GSAP animations. Proficient in automation with Zapier and data analysis using Google Analytics, delivering dynamic, efficient, and data-driven web solutions with seamless user experiences.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="social-links">
+        <h3>Stay Ahead</h3>
+        <input type="email" placeholder="Enter your email" />
+        <button>Subscribe</button>
+      </div>
+      <div class="social-links">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="social-links">
+        <h4>Social</h4>
+        <div class="social-icons">
+          <!-- LinkedIn SVG -->
+          <a href="https://linkedin.com/in/subankar" target="_blank" aria-label="LinkedIn">
+            <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#222"/>
+              <path d="M24 24h-3.5v-5.4c0-1.3-0.47-2.2-1.65-2.2-0.9 0-1.44 0.61-1.68 1.2-0.09 0.2-0.11 0.48-0.11 0.76V24H14V14h3.37v1.37c0.46-0.72 1.27-1.74 3.11-1.74 2.27 0 3.82 1.48 3.82 4.64V24zM9.5 12.45c-1.12 0-2.02-0.91-2.02-2.01 0-1.09 0.9-1.99 2.02-1.99s2.01 0.9 2.01 1.99c0 1.1-0.9 2.01-2.01 2.01zM11.25 24H7.75V14h3.5v10z" fill="#fff"/>
+            </svg>
+          </a>
+          <!-- X (Twitter) SVG -->
+          <a href="https://x.com/paulsubankar406" target="_blank" aria-label="X">
+            <svg width="26" height="26" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#222"/>
+              <path d="M11 10h2.34l3.6 4.97L20.53 10h2.12l-4.22 5.79L22 22h-2.34l-3.71-5.13L13.25 22h-2.13l4.32-5.98L11 10zm2.41 7.56l.76 1.1h.03l.78-1.1-1.57-2.19h-.01l-1.58 2.19z" fill="#fff"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <small>&copy; 2025 subankar. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <button aria-label="Close modal" class="close" id="closeModal">&times;</button>
+      <h2 id="modal-title">Contact Me</h2>
+      <form id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
